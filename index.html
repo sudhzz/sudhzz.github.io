@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudhakar Patil — Professional Portfolio</title>
+    <style>
+        :root {
+            /* Bright yet cool palette */
+            --bg-color: #0f2c3d;      /* Rich, deep ocean slate teal */
+            --card-bg: #1a425a;       /* Lighter cool teal-blue for contrast */
+            --text-main: #f0fdfa;     /* Bright, fresh off-white */
+            --text-muted: #94a3b8;    /* Muted slate gray */
+            --accent: #2dd4bf;        /* Bright mint cyan accent */
+            --border: #225e79;        /* Medium cool border tone */
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 3rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 3rem;
+            border-bottom: 2px solid var(--accent);
+            padding-bottom: 2rem;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.05em;
+            color: var(--text-main);
+        }
+
+        .tagline {
+            color: var(--accent);
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin-bottom: 1.5rem;
+        }
+
+        .social-links a {
+            color: var(--text-main);
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            border-bottom: 1px dashed var(--accent);
+            padding-bottom: 2px;
+        }
+
+        .social-links a:hover {
+            color: var(--accent);
+            border-bottom-style: solid;
+        }
+
+        section {
+            margin-bottom: 3.5rem;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            margin-bottom: 1.2rem;
+            letter-spacing: -0.03em;
+            color: var(--accent);
+            border-left: 4px solid var(--accent);
+            padding-left: 0.75rem;
+        }
+
+        p.summary-text {
+            font-size: 1.05rem;
+            color: #e2e8f0;
+        }
+
+        /* Skills Layout */
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+        }
+
+        .skill-item {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            color: var(--text-main);
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        /* Certifications Layout */
+        .cert-list {
+            display: grid;
+            gap: 1rem;
+        }
+
+        .cert-card {
+            background-color: var(--card-bg);
+            border-left: 4px solid var(--border);
+            padding: 1rem 1.25rem;
+            border-radius: 0 6px 6px 0;
+        }
+
+        .cert-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .cert-issuer {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        /* Projects Layout */
+        .projects-grid {
+            display: grid;
+            gap: 1.5rem;
+        }
+
+        .project-card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.2s ease, border-color 0.2s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--accent);
+        }
+
+        .project-title {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .project-desc {
+            color: #cbd5e1;
+            font-size: 0.98rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .project-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background-color: rgba(45, 212, 191, 0.1);
+            color: var(--accent);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-family: monospace;
+        }
+
+        /* Additional Details Layout */
+        .details-list {
+            list-style: none;
+        }
+
+        .details-list li {
+            margin-bottom: 0.75rem;
+            padding-left: 1.5rem;
+            position: relative;
+            color: #e2e8f0;
+        }
+
+        .details-list li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+        }
+
+        footer {
+            margin-top: 5rem;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border);
+            padding-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Sudhakar Patil</h1>
+            <p class="tagline">Enterprise Solution Architect | AWS | Splunk observability | PSM I</p>
+            <div class="social-links">
+                <a href="mailto:sudhzz@gmail.com">Email</a>
+                <a href="https://github.com/sudhzz" target="_blank">GitHub</a>
+                <a href="https://www.linkedin.com/in/sudhzz/" target="_blank">LinkedIn</a>
+            </div>
+        </header>
+
+        <main>
+            <!-- 1. Professional Summary -->
+            <section id="summary">
+                <h2>Professional Summary</h2>
+                <p class="summary-text">
+                    Enterprise Solution Architect with 19+ years of experience specializing in modernization, design, and delivery of resilient banking systems for global financial institutions. Deep expertise in transforming legacy Java monoliths into secure, scalable, and cloud-ready architectures. Combines strong technical governance, <b>AWS cloud strategies</b>, <b>Splunk observability</b>, and <b>Agile frameworks (PSM I)</b> to align technology delivery with business growth.
+                </p>
+            </section>
+
+            <!-- 2. Core Skills -->
+            <section id="skills">
+                <h2>Core Competencies</h2>
+                <div class="skills-list">
+                    <span class="skill-item">Enterprise Architecture</span>
+                    <span class="skill-item">Cloud Migration Strategy</span>
+                    <span class="skill-item">Microservices Design</span>
+                    <span class="skill-item">Observability & AIOps</span>
+                    <span class="skill-item">Application Security (Checkmarx/veracode)</span>
+                    <span class="skill-item">Agile Delivery Management (Scrum)</span>
+                    <span class="skill-item">Stakeholder Communication</span>
+                </div>
+            </section>
+
+            <!-- 3. Certifications -->
+            <section id="certifications">
+                <h2>Certifications & Education</h2>
+                <div class="cert-list">
+                    <div class="cert-card">
+                        <div class="cert-title">AWS Certified Solutions Architect – Associate (SAA-C03)</div>
+                        <div class="cert-issuer">Amazon Web Services &bull; 2026</div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-title">Splunk Enterprise Certified Administrator</div>
+                        <div class="cert-issuer">Splunk &bull; 2023</div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-title">Professional Scrum Master I (PSM I)</div>
+                        <div class="cert-issuer">Scrum.org &bull; 2025</div>
+                    </div>
+                    <div class="cert-card">
+                        <div class="cert-title">Bachelor of Engineering in Computer Science</div>
+                        <div class="cert-issuer">Dr Ambedkar Institute of Technology, Bengaluru, VTU &bull; 2005</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 4. Future Portfolio Projects -->
+            <section id="projects">
+                <h2>Professional Experience</h2>
+                <div class="projects-grid">
+	<h3>TATA Consultancy Services Ltd. / IT Service Provider | Bengaluru</h3>
+                    
+                    <!-- Project 1 -->
+                    <div class="project-card">
+                        <h3 class="project-title">BUP (International Bank 2)</h3>
+                        <div class="project-tags">
+                            <span class="tag">Senior Technical Lead / Application Architect</span>
+                            <span class="tag">June, 2020 – Present <i>(Note: Includes planned return from family career break / continuous upskilling in Data Science & Cloud)</i></span>
+                        </div>
+                        <p class="project-desc"><ul class="details-list">
+		<li>Led architectural governance for core Struts/Spring banking applications, improving code security via Checkmarx analysis.</li>
+		<li>Spearheaded application modernization assessments and reduced time to rollout by at-least 60% and thus be compliant.</li>
+		<li>Designed end-to-end observability dashboards using ELK Stack to slash system troubleshooting time.</li>
+		<li>Acted as a bridge between distributed client stakeholders and development teams using Agile/Scrum principles, improving sprint predictability and architecture alignment.</li>
+		</ul></p>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card">
+                        <h3 class="project-title">ALAT / GlobeR (International Bank 1)</h3>
+                        <div class="project-tags">
+                            <span class="tag">Technical Lead</span>
+                            <span class="tag">April, 2014 – March, 2020</span>
+                        </div>
+                        <p class="project-desc"><ul class="details-list">
+		<li>Engineered the integration layer migration (SOAP services to latest Tibco BW) across 4 major global regions.</li>
+		<li>Established secure coding guardrails using Veracode to guarantee zero critical vulnerabilities during deployment.</li>
+		<li>Coordinated root-cause analysis for production incidents, collaborating with global infrastructure teams to stabilize high-availability deployment environments.</li>
+		</ul></p>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card">
+                        <h3 class="project-title">BαNCS Payments</h3>
+                        <div class="project-tags">
+                            <span class="tag">Technical Designer</span>
+                            <span class="tag">April, 2011 – January, 2014</span>
+                        </div>
+                        <p class="project-desc"><ul class="details-list">
+		<li>Directed the technical design and subsystem implementation for high-throughput Java/J2EE batch processing pipelines, handling millions of daily transactions.</li>
+		<li>Participated in code reviews, bug fixing, and unit testing to ensure adherence to initial project specifications and quality standards.</li>
+		<li>Built and maintained SQL queries, stored procedures, and database schemas for relational database management systems.</li>
+		<li>Optimized database bound services by identifying the performance bottlenecks, resource constraints, and suboptimal SQL executions through Automatic Workload Repository (AWR) report generation.</li>
+		</ul></p>
+                    </div>
+
+                    <!-- Rest of the projects -->
+                    <div class="project-card">
+                        <h3 class="project-title">BαNCS Treasury / BαNCS Architecture & Tools / BαNCS Core Banking</h3>
+                        <div class="project-tags">
+                            <span class="tag">Developer / Senior Developer / Application Designer</span>
+                            <span class="tag">December, 2005 – April, 2011</span>
+                        </div>
+                        <p class="project-desc"><ul class="details-list">
+		<li>With quick understanding of the tools through focused front-end and back-end development, I was recognized soon as a leading application designer.</li>
+		</ul></p>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- 5. Technical Skills -->
+            <section id="additional-details">
+                <h2>Technical Skills</h2>
+                <ul class="details-list">
+                    <li><strong>Languages & Frameworks:</strong> Java, J2EE, Spring Boot, Spring MVC, Python (Data Science/ML fundamentals), RESTful/SOAP Web Services.</li>
+                    <li><strong>Cloud & Infrastructure:</strong> AWS (Computing, Storage, Security, Networking as per SAA-C03 scope).</li>
+                    <li><strong>Observability & Tools:</strong> Splunk Enterprise (Administration, Dashboards, Monitoring), Checkmarx, Veracode, Git, Maven, Jenkins.</li>
+                    <li><strong>Methodologies:</strong> Agile, Scrum (PSM I), CI/CD, Enterprise Architectural Patterns.</li>
+                </ul>
+            </section>
+
+            <!-- 6. Additional Details -->
+            <section id="additional-details">
+                <h2>Additional Details</h2>
+                <ul class="details-list">
+                    <li>From November 2024, I took a 6-month career break to take care of my ailing parents.</li>
+                    <li>By May 2025, I proactively started upskilling on Data Science, Machine Learning, System Design, AWS</li>
+                </ul>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer>
+            <p>&copy; 2026 Sudhakar Patil. All rights reserved.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
