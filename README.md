@@ -26,8 +26,6 @@ Enterprise Solution Architect with 19+ years of experience specializing in moder
 
 <b>My GitHub Stats</b>
 
-<a href="http://www.github.com/sudhzz"><img src="https://github-readme-stats.vercel.app/api?username=sudhzz&show_icons=true&hide=&count_private=true&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&show_icons=true" alt="sudhzz's GitHub stats" /></a>
+### The image is scheduled to be refreshed every 12 hours
+<img src="github-metrics.svg" alt="My GitHub Metrics" />
 
-<a href="http://www.github.com/sudhzz"><img src="https://github-readme-streak-stats.herokuapp.com/?user=sudhzz&stroke=ffffff&background=1c1917&ring=0891b2&fire=0891b2&currStreakNum=ffffff&currStreakLabel=0891b2&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true" /></a>
-
-<a href="https://github.com/sudhzz" align="left"><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=sudhzz&langs_count=10&title_color=0891b2&text_color=ffffff&icon_color=0891b2&bg_color=1c1917&hide_border=true&locale=en&custom_title=Top%20%Languages" alt="Top Languages" /></a>
