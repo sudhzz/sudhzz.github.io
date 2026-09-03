@@ -15,7 +15,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           
           # Options
-          user: YOUR_USERNAME
+          user: sudhzz
           template: classic
           base: header, activity, community, repositories, metadata
           config_timezone: GMT
